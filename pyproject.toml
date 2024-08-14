@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "dumper"
+version = "0.1.0"
+description = "A credential parsing and normalization tool"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.3.5"
+humanize = "^4.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+mypy = "^1.3.0"
+
+[tool.poetry.scripts]
+dumper = "dumper.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
