@@ -2,7 +2,7 @@
 name = "dumper"
 version = "0.1.0"
 description = "A credential parsing and normalization tool"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Jakub Burgis <mail@jakub.me>"]
 license = "MIT"
 readme = "README.md"
 
